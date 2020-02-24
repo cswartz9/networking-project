@@ -1,1 +1,1 @@
-# networking-project
+UDP video streaming application using JavaFX, OpenCV, and SceneBuilder.
