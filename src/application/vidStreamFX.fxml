@@ -9,17 +9,14 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FXController">
    <bottom>
-      <Button fx:id="startBtn" mnemonicParsing="false" onAction="#startCamera" text="Start Camera" BorderPane.alignment="BOTTOM_CENTER">
+      <Button fx:id="startButton" mnemonicParsing="false" onAction="#startCamera" text="Start Camera" BorderPane.alignment="BOTTOM_CENTER">
          <BorderPane.margin>
             <Insets bottom="10.0" />
          </BorderPane.margin>
       </Button>
    </bottom>
    <center>
-      <ImageView fitHeight="486.0" fitWidth="864.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
-         <image>
-            <Image url="currentFrame" />
-         </image>
+      <ImageView fx:id="frameView" fitHeight="486.0" fitWidth="864.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
       </ImageView>
    </center>
 </BorderPane>
