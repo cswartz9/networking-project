@@ -42,8 +42,8 @@ public class FXController {
 			this.capture.release();
 		}
 		else {
-			capture.open(0);
 			cameraOn = true;
+			capture = new VideoCapture(0);
 			Runnable frameGrabber = new Runnable() {
 				public void run() {
 					Mat frame = new Mat();
